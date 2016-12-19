@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>Local-simple</title>
+  <script src="packaging.min.js"></script>
+</head>
+<body>
+  <h1>Check console!</h1>
+  <script>
+    packaging('path.to.nested.obj').prop = 'value';
+
+    console.log('The path object is created:');
+    console.log(path);
+    console.log('The path object stringified:');
+    console.log(JSON.stringify(path, null, 2));
+  </script>
+</body>
+</html>
